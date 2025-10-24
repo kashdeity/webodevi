@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #faedcd; 
+  color: #333;
+  padding: 2rem;
+}
+
+
+.app-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.header {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #3a3a3a;
+}
+
+
+.filter-bar {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.filter-bar input[type='text'] {
+  flex-grow: 1;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.filter-bar select {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+
+.main-content {
+  display: flex;
+  gap: 2rem;
+}
+
+
+.kitap-listesi {
+  flex: 3; 
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 1.5rem;
+}
+
+
+.kitap-karti {
+  background-color: #fefae0; 
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kitap-karti .info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+  color: #222;
+}
+
+.kitap-karti .info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.kitap-karti button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #ffe8e8; 
+  color: #c94a4a;
+  transition: all 0.2s ease;
+}
+
+.kitap-karti button.favori {
+  background-color: #e53e3e;
+  color: white;
+}
+
+.kitap-karti button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.favori-paneli {
+  flex: 2; 
+  background-color: #fec89a; 
+  padding: 1.5rem;
+  border-radius: 8px;
+  height: fit-content; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.favori-paneli h2 {
+  border-bottom: 2px solid #e5a074;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #5c3a21;
+}
+
+.favori-paneli ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.favori-paneli li {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #4a2e1b;
+}
+
+.favori-paneli .bos-mesaj {
+  color: #5c3a21;
+  font-style: italic;
+}
